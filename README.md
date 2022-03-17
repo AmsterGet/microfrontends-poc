@@ -2,6 +2,8 @@
 
 Microfrontends POC using Webpack Modules Federation.
 
+Based on [advanced-api/dynamic-remotes](https://github.com/module-federation/module-federation-examples/tree/master/advanced-api/dynamic-remotes) example.
+
 ## How to run
 
 Install the dependencies

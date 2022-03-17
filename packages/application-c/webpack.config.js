@@ -11,6 +11,7 @@ module.exports = {
   devtool: 'source-map',
   optimization: {
     minimize: mode === 'production',
+    chunkIds: 'named',
   },
   resolve: {
     extensions: ['.jsx', '.js', '.json'],
