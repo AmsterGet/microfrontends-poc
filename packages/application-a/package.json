@@ -5,7 +5,8 @@
   "scripts": {
     "start": "serve dist -p 3001",
     "build": "webpack --mode production",
-    "dev": "concurrently \"webpack --watch\" \"serve dist -p 3001\""
+    "dev": "concurrently \"webpack --watch\" \"serve dist -p 3001\"",
+    "dev:watch": "webpack --watch"
   },
   "dependencies": {
     "react": "^16.13.1",
