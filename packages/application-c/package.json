@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "static dist -p 3003 -H '{\"Access-Control-Allow-Origin\": \"*\",\"Access-Control-Allow-Methods\": \"*\",\"Access-Control-Allow-Headers\": \"*\", \"Cache-Control\": \"no-cache, no-store, must-revalidate\"}'",
+    "start": "static dist -p 3003 -H \"{\"\"Access-Control-Allow-Origin\"\": \"\"*\"\",\"\"Access-Control-Allow-Methods\"\": \"\"*\"\",\"\"Access-Control-Allow-Headers\"\": \"\"*\"\", \"\"Cache-Control\"\": \"\"no-cache, no-store, must-revalidate\"\"}\"",
     "build": "webpack --mode production",
-    "dev": "concurrently \"webpack --watch\" \"npm run start\""
+    "dev": "concurrently \"webpack --watch\" \"npm run start\"",
+    "dev:watch": "webpack --watch"
   },
   "dependencies": {
     "react": "17.0.2",
