@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapplication_b=self.webpackChunkapplication_b||[]).push([["src_app_jsx"],{375:(e,n,l)=>{l.r(n),l.d(n,{default:()=>s});var t=l(850),a=l.n(t),r=l(422),c=l.n(r);function s({message:e}){return a().createElement(a().Fragment,null,a().createElement("h1",null,"Hello from Application B!"),a().createElement("h2",null,"React version ",a().version,". React DOM version ",c().version),a().createElement("h2",null,e))}}}]);
+//# sourceMappingURL=src_app_jsx.js.map

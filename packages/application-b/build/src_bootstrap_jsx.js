@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapplication_b=self.webpackChunkapplication_b||[]).push([["src_bootstrap_jsx"],{624:(e,n,t)=>{t.r(n);var l=t(850),r=t.n(l),a=t(422),c=t.n(a);function o({message:e}){return r().createElement(r().Fragment,null,r().createElement("h1",null,"Hello from Application B!"),r().createElement("h2",null,"React version ",r().version,". React DOM version ",c().version),r().createElement("h2",null,e))}c().render(r().createElement(o,null),document.getElementById("root"))}}]);
+//# sourceMappingURL=src_bootstrap_jsx.js.map

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "static dist -p 3001",
+    "start": "static dist -p 3001 -H \"{\"\"Access-Control-Allow-Origin\"\": \"\"*\"\",\"\"Access-Control-Allow-Methods\"\": \"\"*\"\",\"\"Access-Control-Allow-Headers\"\": \"\"*\"\", \"\"Cache-Control\"\": \"\"no-cache, no-store, must-revalidate\"\", \"\"Set-Cookie\"\": \"\"session=some_token_here; path=/; HttpOnly; Secure; SameSite=Strict\"\"}\"",
     "build": "webpack --mode production",
     "dev": "concurrently \"webpack --watch\" \"serve dist -p 3001\"",
     "dev:watch": "webpack --watch"
