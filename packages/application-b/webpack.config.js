@@ -1,4 +1,5 @@
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
+const { SubresourceIntegrityPlugin } = require('webpack-subresource-integrity');
 
 const mode = process.env.NODE_ENV || 'production';
 
@@ -7,6 +8,8 @@ module.exports = {
   entry: './src',
   output: {
     publicPath: 'auto',
+    clean: true,
+    crossOriginLoading: 'anonymous',
   },
   devtool: 'source-map',
   optimization: {
@@ -43,6 +46,10 @@ module.exports = {
         './SayHelloFromB': './src/app',
         './SayHelloFromB2': './src/say',
       },
+    }),
+    new SubresourceIntegrityPlugin({
+      hashFuncNames: ['sha256', 'sha384'],
+      hashLoading: 'lazy',
     }),
   ],
 };

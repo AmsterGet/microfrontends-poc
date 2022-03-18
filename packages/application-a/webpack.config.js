@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
+const { SubresourceIntegrityPlugin } = require('webpack-subresource-integrity');
 
 const mode = process.env.NODE_ENV || 'production';
 
@@ -8,6 +9,8 @@ module.exports = {
   entry: './src/index',
   output: {
     publicPath: 'auto',
+    clean: true,
+    crossOriginLoading: 'anonymous',
   },
   devtool: 'source-map',
   optimization: {
@@ -46,6 +49,9 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
+    }),
+    new SubresourceIntegrityPlugin({
+      hashFuncNames: ['sha256', 'sha384'],
     }),
   ],
 };
